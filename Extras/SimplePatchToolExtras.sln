@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfPatcherConsoleApp", "SelfPatcherConsoleApp\SelfPatcherConsoleApp.csproj", "{14D7BE65-F029-4283-A152-178CF553D42B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfPatcherWinForms", "SelfPatcherWinForms\SelfPatcherWinForms.csproj", "{0220910F-A46A-49DC-A46E-2FB72E72429E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LauncherWinForms", "LauncherWinForms\LauncherWinForms.csproj", "{28980C5F-AF29-4C17-8FCD-9D3B767B5C92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePatchToolConsoleApp", "SimplePatchToolConsoleApp\SimplePatchToolConsoleApp.csproj", "{D6B1B21E-315D-4715-9ADA-BC4AF4C5249C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplePatchToolConsoleApp", "SimplePatchToolConsoleApp\SimplePatchToolConsoleApp.csproj", "{D6B1B21E-315D-4715-9ADA-BC4AF4C5249C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfPatcherConsoleApp", "SelfPatcherConsoleApp\SelfPatcherConsoleApp.csproj", "{1E641CF5-2D04-4D0C-943D-9728BF756805}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{14D7BE65-F029-4283-A152-178CF553D42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14D7BE65-F029-4283-A152-178CF553D42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14D7BE65-F029-4283-A152-178CF553D42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14D7BE65-F029-4283-A152-178CF553D42B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0220910F-A46A-49DC-A46E-2FB72E72429E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0220910F-A46A-49DC-A46E-2FB72E72429E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0220910F-A46A-49DC-A46E-2FB72E72429E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{D6B1B21E-315D-4715-9ADA-BC4AF4C5249C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6B1B21E-315D-4715-9ADA-BC4AF4C5249C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6B1B21E-315D-4715-9ADA-BC4AF4C5249C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E641CF5-2D04-4D0C-943D-9728BF756805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E641CF5-2D04-4D0C-943D-9728BF756805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E641CF5-2D04-4D0C-943D-9728BF756805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E641CF5-2D04-4D0C-943D-9728BF756805}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

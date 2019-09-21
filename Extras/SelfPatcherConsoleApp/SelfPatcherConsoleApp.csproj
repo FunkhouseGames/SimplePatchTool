@@ -3,7 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>netcoreapp2.1;net35;net461</TargetFrameworks>
-    <AssemblyName>Patcher</AssemblyName>
+    <AssemblyName>SelfPatcher</AssemblyName>
+    <RuntimeIdentifiers>win-x64;win-x86;linux-x64;osx-x64</RuntimeIdentifiers>
   </PropertyGroup>
 
   <ItemGroup>

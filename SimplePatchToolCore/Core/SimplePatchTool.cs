@@ -329,11 +329,7 @@ namespace SimplePatchToolCore {
 
                 ProcessStartInfo startInfo = new ProcessStartInfo(selfPatcher.FullName) {
                     Arguments = args,
-                    WorkingDirectory = selfPatcher.DirectoryName,
-                    UseShellExecute = true,
-                    RedirectStandardOutput = false,
-                    RedirectStandardError = false,
-                    CreateNoWindow = false
+                    WorkingDirectory = selfPatcher.DirectoryName
                 };
 
                 Process.Start(startInfo);

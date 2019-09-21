@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netcoreapp2.1;net35;net461</TargetFrameworks>
+    <AssemblyName>SimplePatchTool</AssemblyName>
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

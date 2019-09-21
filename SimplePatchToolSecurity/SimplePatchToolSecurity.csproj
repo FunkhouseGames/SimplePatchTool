@@ -26,4 +26,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(SolutionDir)Extras\lib\$(TargetFramework)\$(TargetFileName)&quot;" />
+  </Target>
+
 </Project>

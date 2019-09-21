@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SelfPatcherCore">
-      <HintPath>..\lib\SelfPatcherCore.dll</HintPath>
+      <HintPath>..\lib\net35\SelfPatcherCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />

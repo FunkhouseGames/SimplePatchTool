@@ -458,9 +458,10 @@ namespace SimplePatchToolCore
 			}
 		}
 
-		public static string GetDefaultSelfPatcherExecutablePath( string selfPatcherExecutableName = "SelfPatcher.exe" )
+		public static string GetDefaultSelfPatcherExecutablePath( string rootPath = null, string selfPatcherExecutableName = "SelfPatcher.exe" )
 		{
-			string selfPatcherDirectory = Path.Combine( Path.GetDirectoryName( GetCurrentExecutablePath() ), PatchParameters.SELF_PATCHER_DIRECTORY );
+            var path = rootPath != null ? rootPath : Path.GetDirectoryName(GetCurrentExecutablePath());
+            string selfPatcherDirectory = Path.Combine( path, PatchParameters.SELF_PATCHER_DIRECTORY );
 			return Path.Combine( selfPatcherDirectory, selfPatcherExecutableName );
 		}
 

@@ -175,7 +175,7 @@ namespace SelfPatcherCore
 				else
 				{
 					FileInfo executable = new FileInfo( postSelfPatcher );
-					Process.Start( new ProcessStartInfo( executable.FullName ) { WorkingDirectory = executable.DirectoryName } );
+					Process.Start( new ProcessStartInfo( executable.FullName ) { WorkingDirectory = executable.DirectoryName, UseShellExecute = true } );
 				}
 			}
 

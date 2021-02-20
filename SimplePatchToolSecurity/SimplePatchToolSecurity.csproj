@@ -3,16 +3,55 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netcoreapp2.1;net461</TargetFrameworks>
   </PropertyGroup>
+<<<<<<< HEAD
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="System.Security.Cryptography.Xml">
       <Version>4.5.0</Version>
     </PackageReference>
+=======
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\SimplePatchTool.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="XMLSigner.cs" />
+    <Compile Include="SecurityUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+>>>>>>> f39154cab1366f8751e7f238bfadc96457543864
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
     <Reference Include="System.Xml" />
     <Reference Include="System.Security" />
+<<<<<<< HEAD
+=======
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SimplePatchTool.snk">
+      <Link>SimplePatchTool.snk</Link>
+    </None>
+>>>>>>> f39154cab1366f8751e7f238bfadc96457543864
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.1'">

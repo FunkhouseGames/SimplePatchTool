@@ -8,12 +8,35 @@
     <PublishTrimmed>true</PublishTrimmed>
     <PublishReadyToRun>true</PublishReadyToRun>
   </PropertyGroup>
+<<<<<<< HEAD
 
+=======
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\SimplePatchTool.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+>>>>>>> f39154cab1366f8751e7f238bfadc96457543864
   <ItemGroup>
     <Reference Include="SelfPatcherCore">
       <HintPath>..\lib\$(TargetFramework)\SelfPatcherCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
+<<<<<<< HEAD
 
 </Project>
+=======
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\SimplePatchTool.snk">
+      <Link>SimplePatchTool.snk</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
+>>>>>>> f39154cab1366f8751e7f238bfadc96457543864
